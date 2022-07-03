@@ -1,0 +1,319 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviteca 2022</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'core/css/estilos.css'%}">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+
+          <img src="{% static 'core/img/logo-serviteca.png'%}" id="logo" width="30" height="30" class="d-inline-block align-top" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="servicios.html" id="dropServicios1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="electronica.html">Electrónica Automotriz</a></li>
+                <li><a class="dropdown-item" href="cajasdecambio.html">Cajas de Cambio</a></li>
+                <li><a class="dropdown-item" href="suspension.html">Suspensión y Dirección</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="servicios.html" id="dropServicios2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Nuestros Mecanicos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="javier.html">Javier Leiva > Mecánico General</a></li>
+                <li><a class="dropdown-item" href="daniel.html">Daniel Torres > Electrónica Automotriz</a></li>
+                <li><a class="dropdown-item" href="gabriel.html">Gabriel Prado > Cajas de Cambio</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+          </ul>
+
+
+          <div id="iniciar">
+            <div class="nav-item">
+                <a class="btn btn-dark btn-outline-danger" href="login.html">Iniciar Sesión</a>
+            </div>
+          </div>
+
+          <div id="registrarse">
+            <div class="nav-item">
+                <a class="btn btn-dark me-5 btn-outline-danger" href="registro.html">Registrarse</a>
+            </div>
+          </div>
+          
+          
+          <form class="d-flex">
+              <input class="form-control me-1" type="search" placeholder="Ingrese su busqueda" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Buscar</button>
+          </form>
+          
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div id="presentacion" class="d-flex">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="trabajo1.html">
+            <img src="{% static 'core/img/alineacion1.jpg'%}" class="d-block w-100" alt="alineacion-1">
+          </a>
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-secondary p-2 text-white bg-opacity-75">
+                <h5>Alineación y Balanceo</h5>
+                <p>Alineación y balanceo realizado en taller</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="trabajo2.html">
+            <img src="{% static 'core/img/cajadecambio1.jpg'%}" class="d-block w-100" alt="caja de cambio-1">
+          </a>
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-secondary p-2 text-white bg-opacity-75">
+                <h5>Mantención de caja de Cambio</h5>
+                <p>Mantención a caja de cambio manual en taller</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="trabajo3.html">
+            <img src="{% static 'core/img/electronica1.jpg'%}" class="d-block w-100" alt="electronica-1">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-secondary p-2 text-white bg-opacity-75">
+                <h5>Electrónica Automotriz</h5>
+                <p>Mantención electrónica realizada en taller</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+<br>
+    <h1 class="titulo">Nuestro taller</h1>
+
+    <div class="container-fluid">
+       <div class="col=12 col-md-10 col-sm-12" id="parrafo">
+
+            En el año 2001 comenzó el funcionamiento de Serviteca McQueen, como taller mecánico multimarca 
+          seleccionando lo mejor de nuestro personal técnico y humano para brindar y superar nuestra atención día a día. <br>
+
+            Contamos con tecnología de punta con tal de satisfacer todas las necesidades de su vehículo, realizando diversos tipos
+          de manteciones, cambios de repuesto, entre otros trabajos, utilizando siempre materiales originales y de excelente calidad.<br>
+
+            Trabajando en convenio con concesionarias, y empresas de flota para mantener sus vehículos en óptimas condiciones, ya sea para 
+          trabajos particulares, o próxima comercialización.
+
+              Funcionando por más de 20 años de forma ininterrumpida, Serviteca McQueen se encuentra en proceso de expansión hacia
+            nuevas sucursales, con la finalidad de poder continuar entregando nuestros servicios en diversas comunas. <br>
+
+        </div>
+
+     
+        <div class="container mt-4 shadow-lg p3 mb5 bg-body rounded" id="api">
+            <table class="table table-bordered table-striped">
+           
+          
+                <thead>  
+                  <tr>
+                    <th>Recuerda que nuestra planta permanecerá cerrada estos días:</th>
+                    <th></th>
+            
+                  </tr>
+                 
+                  <tr>
+                     
+                    <th>FECHA</th>
+                    <th>FESTIVIDAD</th>
+                  </tr>
+              </thead>
+              <tbody id="data">
+
+              </tbody>
+            </table>
+        </div>
+
+    </div>
+    
+
+<br>
+<h1 class="titulo">Nuestros Mecánicos</h1>
+<div class="container-fluid" id="cards">
+  <div class="card-group" id="grupo">
+         <div class=tarjeta1>
+         <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mecanico1.png" alt="mecanico1">
+           <div class="card-body">
+             <h5 class="card-title">Javier Leiva</h5>
+             
+
+             <p class="card-text">Mecánico general en vehículos de Bencina y Diesel.</p>
+           </div>
+           <a href="javier.html" class="btn btn-primary">Conoce mi Perfil</a>
+           <div class="card-footer">
+             <small class="text-muted">6 años de experiencia</small>
+           </div>
+         </div>
+       </div>
+
+
+       <div class=tarjeta2>
+         <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mecanico2.png" alt="mecanico2">
+           <div class="card-body">
+             <h5 class="card-title">Daniel Torres</h5>
+             <p class="card-text">Especialista en Electrónica Automotriz</p>
+           </div>
+           <a href="daniel.html" class="btn btn-primary">Conoce mi Perfil</a>
+           <div class="card-footer">
+             <small class="text-muted">4 años de experiencia</small>
+
+
+           </div>
+         </div>
+       </div>
+
+         <div class=tarjeta3>
+         <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mecanico3.png" alt="mecanico3">
+           <div class="card-body">
+             <h5 class="card-title">Gabriel Prado</h5>
+             <p class="card-text">Especialista en Cajas de Cambio, Automática y Manual.</p>
+           </div>
+           <a href="gabriel.html" class="btn btn-primary">Conoce mi Perfil</a>
+           <div class="card-footer">
+             <small class="text-muted">5 años de experiencia</small>
+           </div>
+         </div>
+       </div>
+  </div>
+ </div>
+  </main>
+
+
+        <!--Footer -->
+    <div class="page-footer">
+      <div class="footer-content">
+
+
+        <div class="container">
+          
+            <br>
+              <div class="row">
+                <div class="row">
+
+                      <div class="col=6 col-md-6 col-sm-12">
+                      <br>
+
+                                <h4>Llámanos al:</h4> <br>
+                                <h6>Fono: +56 32 273 4991</h6>
+                                <h6>Cel.: +569 568 725 41</h6>
+                                <br>
+
+                                <div class="contact-info"><i class="icon icon-locate"></i>Álvarez 2336, Viña del Mar, Valparaíso</div>
+                                                    <div class="contact-info"><i class="icon icon-clock"></i>Lunes a Viernes <span class="color">8:30 - 18:30</span></div>
+                                                    <div class="contact-info"><i class="icon icon-email">contacto@McQueen.cl <br></i>  </div>
+                              <a href="contacto.html">Contáctanos</a>
+                      </div>
+
+
+                      <div class="col-6 col-md-4 col-sm-6">
+                        <br>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13379.459661036724!2d-71.5331841!3d-33.0336892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8004f381e9055a38!2sDuoc%20UC%3A%20Sede%20Vi%C3%B1a%20Del%20Mar!5e0!3m2!1ses-419!2scl!4v1650500336312!5m2!1ses-419!2scl" class="d-flex" width="550" height="300" style="border: 5px;" allowfullscreen="" loading="lazy">
+                              </iframe>            
+                      </div>
+
+                </div>
+              </div>
+      </div>
+
+            <img src="{% static 'core/img/formas_pago.png'%}" alt="forma-pago">
+            <br>
+      
+            <p id="copyright"> © 2022 SERVITECA MCQUEEN </p>
+          
+      </div>   
+    </div>
+ 
+
+    <div class="footer-bottom">   </div>	
+    <div class="container"></div>
+
+    <script src="{% static 'core/js/feriados.js'%}"></script>
+
+  
+
+
+
+  </body>
+
+</html>
