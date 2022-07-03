@@ -203,7 +203,14 @@
         </div>
 
     </div>
-    
+    {{ trabajadores }}
+    {% for trabajadores in trabajadores %}
+    <div>
+      <p> nombre: {{ trabajadores.nombre }}</p>
+      <h2>{{ trabajadores.apellido }}</h2>
+  
+  </div>
+{% endfor %} 
 
 <br>
 <h1 class="titulo">Nuestros Mecánicos</h1>
