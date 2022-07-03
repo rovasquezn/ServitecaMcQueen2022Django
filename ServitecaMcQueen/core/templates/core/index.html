@@ -203,27 +203,35 @@
         </div>
 
     </div>
-    {{ trabajadores }}
-    {% for trabajadores in trabajadores %}
+    
+   
     <div>
-      <p> nombre: {{ trabajadores.nombre }}</p>
-      <h2>{{ trabajadores.apellido }}</h2>
+      <p></p> 
+     
+      <h2</h2>
   
   </div>
-{% endfor %} 
+
 
 <br>
 <h1 class="titulo">Nuestros Mecánicos</h1>
 <div class="container-fluid" id="cards">
   <div class="card-group" id="grupo">
-         <div class=tarjeta1>
+    
+
+    {% for trabajadores in trabajadores %}
+
+         <div class=tarjeta>
          <div class="card" style="width: 18rem;">
-           <img class="card-img-top" src="img/mecanico1.png" alt="mecanico1">
+          <div>{{ trabajadores.foto }}</div>
+           <img class="card-img-top" src="img/mecanico1.png" alt="mecanico">
            <div class="card-body">
-             <h5 class="card-title">Javier Leiva</h5>
+             <h5 class="card-title">{{ trabajadores.nombre }}</h5>
+             <h3>{{ trabajadores.apellido }}</h3>
              
 
-             <p class="card-text">Mecánico general en vehículos de Bencina y Diesel.</p>
+             <p class="card-text">{{ trabajadores.cargo }}</p>
+           
            </div>
            <a href="javier.html" class="btn btn-primary">Conoce mi Perfil</a>
            <div class="card-footer">
@@ -231,37 +239,9 @@
            </div>
          </div>
        </div>
+       {% endfor %}
 
-
-       <div class=tarjeta2>
-         <div class="card" style="width: 18rem;">
-           <img class="card-img-top" src="img/mecanico2.png" alt="mecanico2">
-           <div class="card-body">
-             <h5 class="card-title">Daniel Torres</h5>
-             <p class="card-text">Especialista en Electrónica Automotriz</p>
-           </div>
-           <a href="daniel.html" class="btn btn-primary">Conoce mi Perfil</a>
-           <div class="card-footer">
-             <small class="text-muted">4 años de experiencia</small>
-
-
-           </div>
-         </div>
-       </div>
-
-         <div class=tarjeta3>
-         <div class="card" style="width: 18rem;">
-           <img class="card-img-top" src="img/mecanico3.png" alt="mecanico3">
-           <div class="card-body">
-             <h5 class="card-title">Gabriel Prado</h5>
-             <p class="card-text">Especialista en Cajas de Cambio, Automática y Manual.</p>
-           </div>
-           <a href="gabriel.html" class="btn btn-primary">Conoce mi Perfil</a>
-           <div class="card-footer">
-             <small class="text-muted">5 años de experiencia</small>
-           </div>
-         </div>
-       </div>
+     
   </div>
  </div>
   </main>
